@@ -24,7 +24,6 @@ const RegistrationForm = () => {
     association: "",
     pack: student.max,
     price: price,
-    centers: "Noida",
   });
 
   const handleInputChange = (e) => {
@@ -39,7 +38,10 @@ const RegistrationForm = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://62px42synl.execute-api.ap-south-1.amazonaws.com/dev/registration", formData)
+      .post(
+        "https://62px42synl.execute-api.ap-south-1.amazonaws.com/dev/registration",
+        formData
+      )
       .then((res) => {
         console.log(res);
         if (res.status === 200) {
@@ -135,7 +137,7 @@ const RegistrationForm = () => {
 
               <div className="flex flex-col w-[100%]">
                 <h6 className="text-[#000000] text-[16px]  not-italic font-semibold leading-normal tracking-[0.12px] font-sans">
-                  School Name
+                  University Name
                 </h6>
                 <input
                   name="coleg"
@@ -163,7 +165,7 @@ const RegistrationForm = () => {
                 />
               </div>
 
-              <div className="flex flex-col w-[100%]">
+              {/* <div className="flex flex-col w-[100%]">
                 <h6 className="text-[#000000] text-[16px] not-italic font-semibold leading-normal tracking-[0.12px] font-sans">
                   Preferred Centre
                 </h6>
@@ -181,7 +183,7 @@ const RegistrationForm = () => {
                     Shivalik, Malviya Nagar
                   </option>
                 </select>
-              </div>
+              </div> */}
               <div className="flex flex-col w-[100%]">
                 <h6 className="text-[#000000] text-[16px]  not-italic font-semibold leading-normal tracking-[0.12px] font-sans">
                   What according to you is the key thing which your module
@@ -199,7 +201,7 @@ const RegistrationForm = () => {
               </div>
               <div className="flex flex-col w-[100%]">
                 <h6 className="text-[#000000] text-[16px]  not-italic font-semibold leading-normal tracking-[0.12px] font-sans">
-                  What are your expectations from the internship program with
+                  What are your expectations from the Training program with
                   Daffodils?
                 </h6>
                 <input

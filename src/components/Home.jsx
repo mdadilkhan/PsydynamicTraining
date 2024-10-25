@@ -392,7 +392,7 @@ const Home = () => {
         <Dialogbox
           isOpen={isDialogOpen}
           onClose={handleCloseDialog}
-          title="Offline 30 hours internship fee structure"
+          title="Online 15 Hours Training"
         >
           <Card
             title={
@@ -455,9 +455,9 @@ const Home = () => {
               className="appearance-none h-4 w-4 border border-#7355A8] rounded-full checked:bg-[#7355A8] checked:border-transparent focus:outline-none"
               defaultChecked
             />
-            <span className="text-[#7355A8] text-[12px] sm:text-2xl font-light">
+            {/* <span className="text-[#7355A8] text-[12px] sm:text-2xl font-light">
               Offline
-            </span>
+            </span> */}
           </label>
           <span className="font-bold text-[#7355A8] ml-8 text-[16px] sm:text-3xl">
             BATCHES
