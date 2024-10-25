@@ -27,7 +27,7 @@ const Header = () => {
       <div className={`flex justify-between items-center p-6 sm:px-12 py-3 shadow-md ${bgColor} `}>
         <div className="w-[120px] sm:w-[200px] md:[320px] cursor-pointer"
           onClick={()=>{
-            window.open("https://sageturtle.in/daffodils/training/11-12", "_blank");
+            window.open("https://main.d3m8hfa3eosiyv.amplifyapp.com", "_blank");
 
           }}
         >

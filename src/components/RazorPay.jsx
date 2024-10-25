@@ -16,7 +16,7 @@ const RazorPay = ({ currentPayementDetails }) => {
   const checkoutHandler = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/dev/createOrder",
+        "https://62px42synl.execute-api.ap-south-1.amazonaws.com/dev/createOrder",
         {
           data: currentPayementDetails,
         }
@@ -54,7 +54,7 @@ const RazorPay = ({ currentPayementDetails }) => {
 
           axios
             .post(
-              "http://localhost:3000/dev/verifyOrder",
+              "https://62px42synl.execute-api.ap-south-1.amazonaws.com/dev/verifyOrder",
               paymentData
             )
             .then((verificationResponse) => {

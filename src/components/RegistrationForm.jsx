@@ -39,7 +39,7 @@ const RegistrationForm = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/dev/registration", formData)
+      .post("https://62px42synl.execute-api.ap-south-1.amazonaws.com/dev/registration", formData)
       .then((res) => {
         console.log(res);
         if (res.status === 200) {
