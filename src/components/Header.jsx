@@ -31,7 +31,7 @@ const Header = () => {
         <div
           className="w-[120px] sm:w-[200px] md:[320px] cursor-pointer"
           onClick={() => {
-            window.open("https://main.d3m8hfa3eosiyv.amplifyapp.com", "_blank");
+            window.open("https://sageturtle.in/daffodils/training/psychodynamic", "_blank");
           }}
         >
           <img src={Logo} alt="" />
