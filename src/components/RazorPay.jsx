@@ -23,7 +23,7 @@ const RazorPay = ({ currentPayementDetails }) => {
       );
       console.log("data>>", data);
       const options = {
-        key: "rzp_test_IqmS1BltCU4SFU",
+        key: "rzp_live_IIwhdZvx1c4BGz",
         amount: data.data.amount,
         currency: "INR",
         name: "Sage Turtle",
